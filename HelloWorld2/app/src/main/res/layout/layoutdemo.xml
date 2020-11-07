@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <LinearLayout
+        android:id="@+id/vote_11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/visit_place_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="请投票旅游景点:"
+            android:textSize="25dp"/>
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/visit_place_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小羊山"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/visit_place_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小肖山"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/visit_place_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="小高山"
+                android:textSize="20sp"/>
+            <RadioButton
+                android:id="@+id/visit_place_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="蔡徐坤"
+                android:textSize="20sp"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linea1_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/vote_11"
+        android:orientation="vertical"
+        android:layout_marginTop="25dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="兴趣爱好"
+            android:textColor="@color/colorAccent"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hobby_1"
+            android:textSize="25sp"
+            android:text="唱"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hobby_2"
+            android:textSize="25sp"
+            android:text="跳"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hobby_3"
+            android:textSize="25sp"
+            android:text="rap"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hobby_4"
+            android:textSize="25sp"
+            android:text="篮球"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linea1_1">
+
+
+        <EditText
+            android:id="@+id/name_1"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="姓名"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/name_1"
+            android:src="@drawable/xixi"/>
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/r1">
+
+
+        <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

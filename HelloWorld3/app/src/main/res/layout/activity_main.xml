@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--**2-1-1**LinearLayout:线性布局********************************************************
+        wrap_content:内容有多少宽度就有多少
+        match_parent:匹配父控件，上一级控件宽度是多少他就是多少
+        weight/height:权重，在这个父空间里剩下的空间里平分
+        padding：代表内边距,可以加left，top
+        orientation：（方向）水平/垂直排列，是只有线性布局才有的
+        margin：边距
+    -->
+
+    <!--
+    <LinearLayout
+        android:id="@+id/l1_1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:background="#000000"
+        android:padding="20dp"
+        android:paddingBottom="50dp">
+        &lt;!&ndash;&ndash;&gt;
+        &lt;!&ndash;View是所有控件的父类&ndash;&gt;
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF0033"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#000000"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#FF0033"
+            android:layout_weight="1"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="#0066FF"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    -->
+
+    <!--**2-1-2**RelativeLayout相对布局********************************************************
+        toLeft:在谁左边
+        alignBottom：跟谁底部对齐
+        ParentBottom：跟父控件底部对齐
+        below：在谁的下面
+    -->
+<!--
+    <View
+    android:id="@+id/view_1"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:background="#3300ff" />
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#00ff00"
+        android:layout_below="@id/view_1"/>
+    <LinearLayout
+        android:id="@+id/l1_1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/view_3"
+        android:orientation="horizontal"
+        android:background="@android:color/holo_blue_bright"
+        android:padding="15dp"
+        android:layout_margin="10dp">
+            <View
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/holo_red_light"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/black"
+                android:padding="15dp">
+                <View
+                    android:id="@+id/view_4"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_orange_light"/>
+                 <View
+                    android:id="@+id/view_5"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_orange_light"
+                    android:layout_toRightOf="@id/view_4"
+                    android:layout_marginLeft="10dp"/>
+            </RelativeLayout>
+    </LinearLayout>
+    -->
+<!--**2-2**TextView文本**********************************************************************
+    文字大小、颜色
+    显示不下用...:ellipsize="end"
+    文字 + icon ：
+    中划线、下划线：需要java代码来做，在activity里面来做
+    跑马灯:ellipsize="marquee"需要设置包括：
+        singleLine="true"
+        ellipsize="marquee"
+        marqueeRepeatLimit="marquee_forever"
+        focusable="true"
+        focusableInTouchMode="true"/>
+    设置字体大小单位一般用sp
+    text:设置内容
+    textColor:设置颜色
+    textSize:设置大小
+    maxLines:行数限制
+    ellipsize="end":文本显示不下用“...”表示
+    drawableRight="@drawable/super_101"添加图片
+    drawablePadding="5dp"设置距离
+    ellipsize="marquee":跑马灯
+
+-->
+
+    <!--**2-3**Button（继承自TextView）******************
+    文字大小、颜色
+    自定义背景形状
+    自定义按压效果
+    *点击事件(TextView也可以完成)
+    -->
+
+    <!--**2-4**EditText(也是TestView的一个子类)***************************************
+    常用属性
+    监听事件
+    制作登录界面
+    -->
+
+    <!--**2-5**RadioButton
+    常用属性
+    自定义样式
+    监听事件
+    -->
+
+    <!--**2-6**复选框CheckBox
+       常用属性
+       自定义样式
+       监听事件
+    -->
+
+    <!--*2-7*ImageView
+        Button的其他衍生控件：ToggleButton、Switch
+        常用属性
+        加载网络图片
+         android:scaleType=
+            "fitXY"撑满控件，宽高比可能发生改变
+            "fitCenter"保持宽高比缩放，直至能够完全显示
+            "centerCrop"保持宽高比缩放，直至完全覆盖控件，剪裁显示
+    -->
+
+    <Button
+        android:id="@+id/btn_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"/>
+
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button"/>
+
+    <Button
+        android:id="@+id/btn_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EditTest"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_radiobutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RadioButton"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CheckBox"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_imageview"
+        android:text="ImageView"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
